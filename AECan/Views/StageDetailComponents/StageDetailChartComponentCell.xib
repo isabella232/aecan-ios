@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat_bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StageDetailChartComponentCell" customModule="AECan_DEV" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="157" id="GRG-Wt-fhk" customClass="StageDetailChartComponentCell" customModule="AECan_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GRG-Wt-fhk" id="Eaa-KK-gnO">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nE5-m0-E4W">
+                        <rect key="frame" x="22" y="11" width="370" height="135"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VK2-tt-4Sj">
+                                <rect key="frame" x="335" y="15" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="NCV-5Y-T2T"/>
+                                    <constraint firstAttribute="width" constant="20" id="xKs-Zd-3SZ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                                <state key="normal" image="chart_icon"/>
+                                <connections>
+                                    <action selector="chartViewButtonTapped" destination="GRG-Wt-fhk" eventType="touchUpInside" id="diu-Ur-c5L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPT-jF-HcL">
+                                <rect key="frame" x="307" y="15" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="MUl-JI-p2q"/>
+                                    <constraint firstAttribute="width" constant="20" id="ODO-C2-Djx"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="2" minY="4" maxX="2" maxY="2"/>
+                                <state key="normal" image="list_icon"/>
+                                <connections>
+                                    <action selector="listViewButtonTapped" destination="GRG-Wt-fhk" eventType="touchUpInside" id="PSA-FG-xK5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkt-lw-K6R">
+                                <rect key="frame" x="12" y="15" width="287" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                <color key="textColor" name="mainColor300"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNk-a4-q59">
+                                <rect key="frame" x="0.0" y="36" width="370" height="84"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZk-Ii-lQL">
+                                <rect key="frame" x="331" y="96" width="24" height="24"/>
+                                <color key="backgroundColor" name="accentColor100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="GDW-dz-pTg"/>
+                                    <constraint firstAttribute="height" constant="24" id="hWt-vo-it7"/>
+                                </constraints>
+                                <state key="normal" image="icon_plus"/>
+                                <connections>
+                                    <action selector="addValueTapped" destination="GRG-Wt-fhk" eventType="touchUpInside" id="DnL-0V-WAC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dNk-a4-q59" secondAttribute="bottom" constant="15" id="2rc-lE-tB6"/>
+                            <constraint firstItem="VK2-tt-4Sj" firstAttribute="top" secondItem="nE5-m0-E4W" secondAttribute="top" constant="15" id="57U-Pr-tlq"/>
+                            <constraint firstItem="Qkt-lw-K6R" firstAttribute="top" secondItem="nE5-m0-E4W" secondAttribute="top" constant="15" id="LBA-q6-zEh"/>
+                            <constraint firstItem="Qkt-lw-K6R" firstAttribute="leading" secondItem="nE5-m0-E4W" secondAttribute="leading" constant="12" id="LOg-QF-2pm"/>
+                            <constraint firstAttribute="trailing" secondItem="dNk-a4-q59" secondAttribute="trailing" id="QjV-7t-19x"/>
+                            <constraint firstAttribute="bottom" secondItem="YZk-Ii-lQL" secondAttribute="bottom" constant="15" id="T4n-y0-8Fo"/>
+                            <constraint firstItem="TPT-jF-HcL" firstAttribute="top" secondItem="nE5-m0-E4W" secondAttribute="top" constant="15" id="XyI-uC-gr5"/>
+                            <constraint firstItem="TPT-jF-HcL" firstAttribute="leading" secondItem="Qkt-lw-K6R" secondAttribute="trailing" constant="8" id="blB-1k-dwt"/>
+                            <constraint firstAttribute="trailing" secondItem="VK2-tt-4Sj" secondAttribute="trailing" constant="15" id="g61-s4-dfZ"/>
+                            <constraint firstItem="dNk-a4-q59" firstAttribute="top" secondItem="Qkt-lw-K6R" secondAttribute="bottom" id="lF2-x9-i9j"/>
+                            <constraint firstItem="VK2-tt-4Sj" firstAttribute="leading" secondItem="TPT-jF-HcL" secondAttribute="trailing" constant="8" id="nd1-1k-5xE"/>
+                            <constraint firstAttribute="trailing" secondItem="YZk-Ii-lQL" secondAttribute="trailing" constant="15" id="o9z-RW-14A"/>
+                            <constraint firstItem="dNk-a4-q59" firstAttribute="leading" secondItem="nE5-m0-E4W" secondAttribute="leading" id="vac-xw-zDU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nE5-m0-E4W" secondAttribute="trailing" constant="22" id="UwM-tm-OSi"/>
+                    <constraint firstItem="nE5-m0-E4W" firstAttribute="leading" secondItem="Eaa-KK-gnO" secondAttribute="leading" constant="22" id="YJj-UQ-TcY"/>
+                    <constraint firstAttribute="bottom" secondItem="nE5-m0-E4W" secondAttribute="bottom" constant="11" id="iDd-kG-sgc"/>
+                    <constraint firstItem="nE5-m0-E4W" firstAttribute="top" secondItem="Eaa-KK-gnO" secondAttribute="top" constant="11" id="loR-xE-XsV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="card" destination="nE5-m0-E4W" id="IGs-NH-G8Q"/>
+                <outlet property="chartButton" destination="VK2-tt-4Sj" id="ZHL-ML-65G"/>
+                <outlet property="createButton" destination="YZk-Ii-lQL" id="gZh-PX-cl7"/>
+                <outlet property="listButton" destination="TPT-jF-HcL" id="fVe-RS-oj8"/>
+                <outlet property="mainViewContainer" destination="dNk-a4-q59" id="Sr7-U7-rxu"/>
+                <outlet property="titleLabel" destination="Qkt-lw-K6R" id="vUR-l6-3ZL"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="134.93303571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chart_icon" width="38" height="34"/>
+        <image name="icon_plus" width="16" height="16"/>
+        <image name="list_icon" width="45" height="39"/>
+        <namedColor name="accentColor100">
+            <color red="0.13300000131130219" green="0.6119999885559082" blue="0.84700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColor300">
+            <color red="0.29800000786781311" green="0.56099998950958252" blue="0.41600000858306885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StageDetailEditValueArrayComponentSeparatorView" customModule="AECan_DEV" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StageDetailEditValueArrayComponentSeparatorView" customModule="AECan_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwv-Sn-pUc">
+                    <rect key="frame" x="14" y="44" width="400" height="817"/>
+                    <color key="backgroundColor" name="ucGrey250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="5V3-I1-hxa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gwv-Sn-pUc" secondAttribute="bottom" constant="1" id="2AY-fc-tMV"/>
+                <constraint firstItem="gwv-Sn-pUc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="14" id="bYg-jx-7l2"/>
+                <constraint firstItem="gwv-Sn-pUc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="cJg-K3-Oae"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gwv-Sn-pUc" secondAttribute="trailing" id="rCi-bY-Lr8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="100"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="ucGrey250">
+            <color red="0.87800002098083496" green="0.87800002098083496" blue="0.87800002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat_regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Stage Detail Tab View Controller-->
+        <scene sceneID="VJB-6z-GxB">
+            <objects>
+                <viewController storyboardIdentifier="StageDetailTabViewController" id="VN8-Y5-K62" customClass="StageDetailTabViewController" customModule="AECan_DEV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ohl-VA-6rG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No hay tratamientos activos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piZ-4H-ltd">
+                                <rect key="frame" x="0.0" y="15" width="375" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" name="ucGrey600"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hpn-RX-E8X">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5Cj-co-mDE" firstAttribute="bottom" secondItem="hpn-RX-E8X" secondAttribute="bottom" id="Ir6-Gg-Kkj"/>
+                            <constraint firstItem="5Cj-co-mDE" firstAttribute="trailing" secondItem="hpn-RX-E8X" secondAttribute="trailing" id="MLc-aa-Mej"/>
+                            <constraint firstItem="hpn-RX-E8X" firstAttribute="leading" secondItem="5Cj-co-mDE" secondAttribute="leading" id="Tyc-iC-t71"/>
+                            <constraint firstItem="piZ-4H-ltd" firstAttribute="top" secondItem="5Cj-co-mDE" secondAttribute="top" constant="15" id="le9-XX-SwW"/>
+                            <constraint firstItem="hpn-RX-E8X" firstAttribute="top" secondItem="5Cj-co-mDE" secondAttribute="top" id="pLf-Ng-HW5"/>
+                            <constraint firstItem="piZ-4H-ltd" firstAttribute="leading" secondItem="5Cj-co-mDE" secondAttribute="leading" id="qxv-H9-4AI"/>
+                            <constraint firstItem="5Cj-co-mDE" firstAttribute="trailing" secondItem="piZ-4H-ltd" secondAttribute="trailing" id="ulO-Ga-9IH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Cj-co-mDE"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="emptyMessageLabel" destination="piZ-4H-ltd" id="mWb-7q-RPL"/>
+                        <outlet property="tableView" destination="hpn-RX-E8X" id="u17-be-IUG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MrO-QE-I2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="ucGrey600">
+            <color red="0.31000000238418579" green="0.31000000238418579" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

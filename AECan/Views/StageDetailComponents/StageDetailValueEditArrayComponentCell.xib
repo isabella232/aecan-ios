@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StageDetailValueEditArrayComponentCell" customModule="AECan_DEV" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="204" id="SWK-Fm-KhS" customClass="StageDetailValueEditArrayComponentCell" customModule="AECan_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SWK-Fm-KhS" id="ZCG-Wc-QeR">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VER-re-42L">
+                        <rect key="frame" x="22" y="11" width="370" height="182"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PKM-eh-C3Z">
+                                <rect key="frame" x="0.0" y="0.0" width="370" height="182"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PKM-eh-C3Z" secondAttribute="trailing" id="618-bE-xXe"/>
+                            <constraint firstAttribute="bottom" secondItem="PKM-eh-C3Z" secondAttribute="bottom" id="LyX-ZY-QNa"/>
+                            <constraint firstItem="PKM-eh-C3Z" firstAttribute="leading" secondItem="VER-re-42L" secondAttribute="leading" id="aFB-mY-qzH"/>
+                            <constraint firstItem="PKM-eh-C3Z" firstAttribute="top" secondItem="VER-re-42L" secondAttribute="top" id="iPn-iM-E2t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="VER-re-42L" secondAttribute="trailing" constant="22" id="3Zq-7T-DE9"/>
+                    <constraint firstAttribute="bottom" secondItem="VER-re-42L" secondAttribute="bottom" constant="11" id="C8o-bw-SIR"/>
+                    <constraint firstItem="VER-re-42L" firstAttribute="top" secondItem="ZCG-Wc-QeR" secondAttribute="top" constant="11" id="YaN-9E-Epn"/>
+                    <constraint firstItem="VER-re-42L" firstAttribute="leading" secondItem="ZCG-Wc-QeR" secondAttribute="leading" constant="22" id="vo0-8m-8t0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="card" destination="VER-re-42L" id="cn5-LU-7Xg"/>
+                <outlet property="stackView" destination="PKM-eh-C3Z" id="ei9-QK-gpa"/>
+            </connections>
+            <point key="canvasLocation" x="-4.3478260869565224" y="4.0178571428571423"/>
+        </tableViewCell>
+    </objects>
+</document>

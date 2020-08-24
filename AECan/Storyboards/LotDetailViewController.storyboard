@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lot Detail View Controller-->
+        <scene sceneID="lcg-Qn-pAE">
+            <objects>
+                <viewController storyboardIdentifier="LotDetailViewController" id="8xL-W3-A0E" customClass="LotDetailViewController" customModule="AECan_DEV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HeB-bQ-6yz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wDe-Pw-2rD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtP-aM-bRi" customClass="BlueButton" customModule="AECan_DEV" customModuleProvider="target">
+                                <rect key="frame" x="28" y="763" width="358" height="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Ver análisis de laboratorio" image="attach_icon"/>
+                                <connections>
+                                    <action selector="showAnalysisTapped" destination="8xL-W3-A0E" eventType="touchUpInside" id="YtQ-R9-wKP"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWy-tX-zd3" customClass="AeternityButton" customModule="AECan_DEV" customModuleProvider="target">
+                                <rect key="frame" x="28" y="807" width="358" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="yti-jv-E8o"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
+                                <state key="normal" image="aeternity_button"/>
+                                <connections>
+                                    <action selector="showAeternityTransactionTapped" destination="8xL-W3-A0E" eventType="touchUpInside" id="beo-5c-y7R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FWy-tX-zd3" firstAttribute="top" secondItem="GtP-aM-bRi" secondAttribute="bottom" constant="20" id="3Fk-73-2fu"/>
+                            <constraint firstItem="wDe-Pw-2rD" firstAttribute="leading" secondItem="TtY-eu-PYa" secondAttribute="leading" id="A6q-gh-zps"/>
+                            <constraint firstItem="GtP-aM-bRi" firstAttribute="leading" secondItem="TtY-eu-PYa" secondAttribute="leading" constant="28" id="LN9-0D-zOx"/>
+                            <constraint firstItem="wDe-Pw-2rD" firstAttribute="top" secondItem="TtY-eu-PYa" secondAttribute="top" id="Lge-yD-68L"/>
+                            <constraint firstItem="GtP-aM-bRi" firstAttribute="top" secondItem="wDe-Pw-2rD" secondAttribute="bottom" constant="27" id="RES-od-LXs"/>
+                            <constraint firstItem="TtY-eu-PYa" firstAttribute="bottom" secondItem="FWy-tX-zd3" secondAttribute="bottom" constant="10" id="WeP-TY-NPM"/>
+                            <constraint firstItem="TtY-eu-PYa" firstAttribute="trailing" secondItem="GtP-aM-bRi" secondAttribute="trailing" constant="28" id="b8M-RD-UUT"/>
+                            <constraint firstItem="TtY-eu-PYa" firstAttribute="trailing" secondItem="wDe-Pw-2rD" secondAttribute="trailing" id="dF3-ag-RtO"/>
+                            <constraint firstItem="FWy-tX-zd3" firstAttribute="leading" secondItem="TtY-eu-PYa" secondAttribute="leading" constant="28" id="gp2-Js-3Qf"/>
+                            <constraint firstItem="TtY-eu-PYa" firstAttribute="trailing" secondItem="FWy-tX-zd3" secondAttribute="trailing" constant="28" id="tXx-BZ-NTF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TtY-eu-PYa"/>
+                    </view>
+                    <connections>
+                        <outlet property="aeternityButton" destination="FWy-tX-zd3" id="oxD-qs-8Tm"/>
+                        <outlet property="analysisButton" destination="GtP-aM-bRi" id="ZNf-HU-Wdi"/>
+                        <outlet property="tableView" destination="wDe-Pw-2rD" id="WYR-o2-pOk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RfZ-vS-Bjo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aeternity_button" width="240" height="38"/>
+        <image name="attach_icon" width="24" height="24"/>
+    </resources>
+</document>

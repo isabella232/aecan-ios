@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat_regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProcedureBodyView" customModule="AECan_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="un3-qC-KEz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iN-AX-0Fg">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                            <color key="textColor" name="ucGrey450"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6iN-AX-0Fg" firstAttribute="top" secondItem="un3-qC-KEz" secondAttribute="top" id="4lV-Nd-WRl"/>
+                        <constraint firstItem="6iN-AX-0Fg" firstAttribute="leading" secondItem="un3-qC-KEz" secondAttribute="leading" id="E4x-2I-Pbt"/>
+                        <constraint firstAttribute="bottom" secondItem="6iN-AX-0Fg" secondAttribute="bottom" constant="10" id="MYo-7I-tD9"/>
+                        <constraint firstAttribute="trailing" secondItem="6iN-AX-0Fg" secondAttribute="trailing" id="bgp-AB-1qY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="un3-qC-KEz" secondAttribute="top" id="DTa-zQ-tXT"/>
+                <constraint firstItem="un3-qC-KEz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LU1-jh-LO1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="un3-qC-KEz" secondAttribute="trailing" id="aqU-eg-gTM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="un3-qC-KEz" secondAttribute="bottom" id="bF9-Hd-Tga"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bodyLabel" destination="6iN-AX-0Fg" id="Ofs-ry-Pow"/>
+                <outlet property="leftLabelConstraint" destination="E4x-2I-Pbt" id="t4H-Bc-gN8"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="-153.82308845577214"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="ucGrey450">
+            <color red="0.53299999237060547" green="0.53299999237060547" blue="0.53299999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

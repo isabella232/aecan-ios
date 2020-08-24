@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat_regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StageDetailValueListArrayComponentCell" customModule="AECan_DEV" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="37" id="wpX-LG-c9x" customClass="StageDetailValueListArrayComponentCell" customModule="AECan_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wpX-LG-c9x" id="m7g-vD-3P7">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVs-B1-u4m">
+                        <rect key="frame" x="22" y="11" width="370" height="98"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="..." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WB-PG-dGi">
+                                <rect key="frame" x="12" y="12" width="250" height="19"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" name="mainColor400"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hen-z8-fro">
+                                <rect key="frame" x="278" y="12" width="80" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Ebc-Bd-PAp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                                <color key="tintColor" name="mainColor150"/>
+                                <state key="normal" title="Mostrar todas"/>
+                                <connections>
+                                    <action selector="toggleTapped" destination="wpX-LG-c9x" eventType="touchUpInside" id="frt-Ek-R5v"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ik0-GY-aDJ">
+                                <rect key="frame" x="12" y="43" width="346" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mA4-Zh-fYA">
+                                <rect key="frame" x="334" y="62" width="24" height="24"/>
+                                <color key="backgroundColor" name="accentColor100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="uy7-fk-ivf"/>
+                                    <constraint firstAttribute="height" constant="24" id="wce-4E-5dA"/>
+                                </constraints>
+                                <state key="normal" image="icon_plus"/>
+                                <connections>
+                                    <action selector="createTapped" destination="wpX-LG-c9x" eventType="touchUpInside" id="Uw5-fr-pj1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUR-oV-Kpd">
+                                <rect key="frame" x="302" y="62" width="24" height="24"/>
+                                <color key="backgroundColor" name="accentColor100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="2wn-WY-Y01"/>
+                                    <constraint firstAttribute="width" constant="24" id="fyh-hO-7R3"/>
+                                </constraints>
+                                <state key="normal" title="−"/>
+                                <connections>
+                                    <action selector="deleteTapped" destination="wpX-LG-c9x" eventType="touchUpInside" id="TMR-Cf-Rmm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3WB-PG-dGi" firstAttribute="top" secondItem="zVs-B1-u4m" secondAttribute="top" constant="12" id="6wN-3b-lwj"/>
+                            <constraint firstItem="3WB-PG-dGi" firstAttribute="leading" secondItem="zVs-B1-u4m" secondAttribute="leading" constant="12" id="7g3-jc-BG4"/>
+                            <constraint firstAttribute="trailing" secondItem="ik0-GY-aDJ" secondAttribute="trailing" constant="12" id="8mG-2Y-YXe"/>
+                            <constraint firstAttribute="trailing" secondItem="mA4-Zh-fYA" secondAttribute="trailing" constant="12" id="F22-kz-boS"/>
+                            <constraint firstItem="ik0-GY-aDJ" firstAttribute="leading" secondItem="zVs-B1-u4m" secondAttribute="leading" constant="12" id="I0S-Xx-nNw"/>
+                            <constraint firstItem="Hen-z8-fro" firstAttribute="top" secondItem="3WB-PG-dGi" secondAttribute="top" id="R78-JK-v1w"/>
+                            <constraint firstAttribute="trailing" secondItem="Hen-z8-fro" secondAttribute="trailing" constant="12" id="Rwy-zR-fjw"/>
+                            <constraint firstItem="ik0-GY-aDJ" firstAttribute="top" secondItem="3WB-PG-dGi" secondAttribute="bottom" constant="12" id="UeT-fJ-20q"/>
+                            <constraint firstAttribute="bottom" secondItem="ik0-GY-aDJ" secondAttribute="bottom" constant="12" id="WJ3-Ui-qgu"/>
+                            <constraint firstItem="mA4-Zh-fYA" firstAttribute="leading" secondItem="aUR-oV-Kpd" secondAttribute="trailing" constant="8" id="XLP-2K-i6V"/>
+                            <constraint firstAttribute="bottom" secondItem="mA4-Zh-fYA" secondAttribute="bottom" constant="12" id="Z8H-bZ-PHn"/>
+                            <constraint firstItem="Hen-z8-fro" firstAttribute="leading" secondItem="3WB-PG-dGi" secondAttribute="trailing" constant="16" id="d4f-2h-qjM"/>
+                            <constraint firstItem="aUR-oV-Kpd" firstAttribute="bottom" secondItem="mA4-Zh-fYA" secondAttribute="bottom" id="gQH-ce-UGx"/>
+                            <constraint firstItem="aUR-oV-Kpd" firstAttribute="top" secondItem="mA4-Zh-fYA" secondAttribute="top" id="m4y-Vh-CVi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="zVs-B1-u4m" secondAttribute="bottom" constant="11" id="WEJ-AK-EZN"/>
+                    <constraint firstItem="zVs-B1-u4m" firstAttribute="leading" secondItem="m7g-vD-3P7" secondAttribute="leading" constant="22" id="lvR-0S-8cn"/>
+                    <constraint firstAttribute="trailing" secondItem="zVs-B1-u4m" secondAttribute="trailing" constant="22" id="qyp-Sj-dv7"/>
+                    <constraint firstItem="zVs-B1-u4m" firstAttribute="top" secondItem="m7g-vD-3P7" secondAttribute="top" constant="11" id="tFs-PA-LxI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="card" destination="zVs-B1-u4m" id="dW0-fz-6JW"/>
+                <outlet property="contentLabel" destination="ik0-GY-aDJ" id="1wJ-Ap-eRP"/>
+                <outlet property="createButton" destination="mA4-Zh-fYA" id="tKL-wY-XMW"/>
+                <outlet property="deleteButton" destination="aUR-oV-Kpd" id="s8g-dQ-H4c"/>
+                <outlet property="expandButton" destination="Hen-z8-fro" id="QqP-DZ-iFt"/>
+                <outlet property="titleLabel" destination="3WB-PG-dGi" id="33z-op-AZo"/>
+            </connections>
+            <point key="canvasLocation" x="8.6956521739130448" y="66.964285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_plus" width="16" height="16"/>
+        <namedColor name="accentColor100">
+            <color red="0.13300000131130219" green="0.6119999885559082" blue="0.84700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColor150">
+            <color red="0.42699998617172241" green="0.67500001192092896" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColor400">
+            <color red="0.063000001013278961" green="0.41600000858306885" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

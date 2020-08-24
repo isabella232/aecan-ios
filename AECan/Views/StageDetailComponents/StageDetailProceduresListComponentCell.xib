@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat_regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StageDetailProceduresListComponentCell" customModule="AECan_DEV" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="272" id="eaf-rX-xZh" customClass="StageDetailProceduresListComponentCell" customModule="AECan_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="272"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eaf-rX-xZh" id="nUl-Va-1r1">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="272"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aqD-oW-Xsc">
+                        <rect key="frame" x="22" y="11" width="370" height="250"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tratamientos fitosanitarios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bm0-1i-aCQ">
+                                <rect key="frame" x="18" y="18" width="334" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <color key="textColor" name="mainColor100"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="249" verticalCompressionResistancePriority="249" image="ucCellBg" translatesAutoresizingMaskIntoConstraints="NO" id="DHm-LN-I2b">
+                                <rect key="frame" x="210" y="100" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="KuL-hC-4CA"/>
+                                    <constraint firstAttribute="width" constant="150" id="dYt-6h-NLi"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="o99-BX-9WL">
+                                <rect key="frame" x="22" y="51" width="326" height="187"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DHm-LN-I2b" secondAttribute="bottom" id="8hs-Ke-uBf"/>
+                            <constraint firstItem="DHm-LN-I2b" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aqD-oW-Xsc" secondAttribute="top" id="BQi-CN-lgo"/>
+                            <constraint firstAttribute="trailing" secondItem="bm0-1i-aCQ" secondAttribute="trailing" constant="18" id="ECj-y5-t8S"/>
+                            <constraint firstItem="o99-BX-9WL" firstAttribute="top" secondItem="bm0-1i-aCQ" secondAttribute="bottom" constant="12" id="EQc-je-kN1"/>
+                            <constraint firstAttribute="bottom" secondItem="o99-BX-9WL" secondAttribute="bottom" constant="12" id="NtY-sF-rDj"/>
+                            <constraint firstAttribute="trailing" secondItem="DHm-LN-I2b" secondAttribute="trailing" constant="10" id="gwP-21-KqJ"/>
+                            <constraint firstAttribute="trailing" secondItem="o99-BX-9WL" secondAttribute="trailing" constant="22" id="jrP-8r-Js0"/>
+                            <constraint firstItem="bm0-1i-aCQ" firstAttribute="leading" secondItem="aqD-oW-Xsc" secondAttribute="leading" constant="18" id="lGE-Nc-Py6"/>
+                            <constraint firstItem="bm0-1i-aCQ" firstAttribute="top" secondItem="aqD-oW-Xsc" secondAttribute="top" constant="18" id="q4j-nu-F7t"/>
+                            <constraint firstItem="o99-BX-9WL" firstAttribute="leading" secondItem="aqD-oW-Xsc" secondAttribute="leading" constant="22" id="zS9-8M-hLz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aqD-oW-Xsc" firstAttribute="leading" secondItem="nUl-Va-1r1" secondAttribute="leading" constant="22" id="M71-hu-wDc"/>
+                    <constraint firstAttribute="bottom" secondItem="aqD-oW-Xsc" secondAttribute="bottom" constant="11" id="Ugt-Rh-Zhn"/>
+                    <constraint firstAttribute="trailing" secondItem="aqD-oW-Xsc" secondAttribute="trailing" constant="22" id="l6V-if-mCz"/>
+                    <constraint firstItem="aqD-oW-Xsc" firstAttribute="top" secondItem="nUl-Va-1r1" secondAttribute="top" constant="11" id="ykk-Qh-BeA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="card" destination="aqD-oW-Xsc" id="9dM-Bj-rmm"/>
+                <outlet property="stackView" destination="o99-BX-9WL" id="xx4-Pv-xoj"/>
+                <outlet property="titleLabel" destination="bm0-1i-aCQ" id="Kb6-r8-6zF"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="95.089285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ucCellBg" width="454" height="363"/>
+        <namedColor name="mainColor100">
+            <color red="0.46299999952316284" green="0.72500002384185791" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

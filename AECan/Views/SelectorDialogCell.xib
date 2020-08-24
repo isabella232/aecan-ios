@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat_regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectorDialogCell" customModule="AECan_DEV" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="89" id="2IJ-kA-lKr" customClass="SelectorDialogCell" customModule="AECan_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2IJ-kA-lKr" id="nul-JG-yNX">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTM-n0-OKC">
+                        <rect key="frame" x="107" y="24.5" width="200" height="40"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="4uG-ak-lXt"/>
+                            <constraint firstAttribute="width" constant="200" id="gnA-Jr-jSc"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e72-eA-exL">
+                        <rect key="frame" x="107" y="30.5" width="200" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="iUf-Qt-fmj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="24"/>
+                        <color key="textColor" name="ucGrey450"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KTM-n0-OKC" firstAttribute="centerX" secondItem="nul-JG-yNX" secondAttribute="centerX" id="1iy-qS-jc9"/>
+                    <constraint firstItem="e72-eA-exL" firstAttribute="centerY" secondItem="nul-JG-yNX" secondAttribute="centerY" id="NF8-N7-0hl"/>
+                    <constraint firstItem="KTM-n0-OKC" firstAttribute="centerY" secondItem="nul-JG-yNX" secondAttribute="centerY" id="WWM-VQ-obG"/>
+                    <constraint firstItem="e72-eA-exL" firstAttribute="centerX" secondItem="nul-JG-yNX" secondAttribute="centerX" id="X4K-C0-JSa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="borderView" destination="KTM-n0-OKC" id="n5A-u6-J4D"/>
+                <outlet property="label" destination="e72-eA-exL" id="veN-xR-on6"/>
+            </connections>
+            <point key="canvasLocation" x="8.6956521739130448" y="52.566964285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="ucGrey450">
+            <color red="0.53299999237060547" green="0.53299999237060547" blue="0.53299999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,2 @@
+#!/bin/bash
+fastlane distribute_operario_development_to_firebase && fastlane distribute_operario_staging_to_firebase && fastlane distribute_usuario_development_to_firebase && fastlane distribute_usuario_staging_to_firebase

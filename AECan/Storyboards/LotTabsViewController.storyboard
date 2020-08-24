@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lot Tabs View Controller-->
+        <scene sceneID="kxS-91-v2Q">
+            <objects>
+                <viewController storyboardIdentifier="LotTabsViewController" id="uhy-LL-KNP" customClass="LotTabsViewController" customModule="AECan_DEV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KOm-mJ-SPm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuA-NS-a4h" userLabel="Tab Container">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YSD-nN-tx0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OFM-mV-1AP" userLabel="Tab Content">
+                                <rect key="frame" x="0.0" y="94" width="414" height="709"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TY-Ge-ctn" customClass="BlueButton" customModule="AECan_DEV" customModuleProvider="target">
+                                <rect key="frame" x="28" y="830" width="358" height="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Crear nuevo lote" image="icon_plus"/>
+                                <connections>
+                                    <action selector="newLotTapped" destination="uhy-LL-KNP" eventType="touchUpInside" id="jOx-mo-xqc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9TY-Ge-ctn" firstAttribute="top" secondItem="OFM-mV-1AP" secondAttribute="bottom" constant="27" id="5GI-hU-AGh"/>
+                            <constraint firstItem="KuA-NS-a4h" firstAttribute="top" secondItem="m1X-oY-eLF" secondAttribute="top" id="EM3-mZ-nnN"/>
+                            <constraint firstItem="m1X-oY-eLF" firstAttribute="trailing" secondItem="KuA-NS-a4h" secondAttribute="trailing" id="Ewv-06-B3z"/>
+                            <constraint firstItem="OFM-mV-1AP" firstAttribute="top" secondItem="KuA-NS-a4h" secondAttribute="bottom" id="GBP-x2-x76"/>
+                            <constraint firstItem="m1X-oY-eLF" firstAttribute="trailing" secondItem="OFM-mV-1AP" secondAttribute="trailing" id="TVs-lR-S83"/>
+                            <constraint firstItem="m1X-oY-eLF" firstAttribute="trailing" secondItem="9TY-Ge-ctn" secondAttribute="trailing" constant="28" id="X6M-MK-LcM"/>
+                            <constraint firstItem="OFM-mV-1AP" firstAttribute="leading" secondItem="m1X-oY-eLF" secondAttribute="leading" id="e2C-Km-77j"/>
+                            <constraint firstItem="KuA-NS-a4h" firstAttribute="leading" secondItem="m1X-oY-eLF" secondAttribute="leading" id="fnI-eS-se5"/>
+                            <constraint firstItem="m1X-oY-eLF" firstAttribute="bottom" secondItem="9TY-Ge-ctn" secondAttribute="bottom" constant="10" id="jrj-j1-lfV"/>
+                            <constraint firstItem="9TY-Ge-ctn" firstAttribute="leading" secondItem="m1X-oY-eLF" secondAttribute="leading" constant="28" id="yh3-Cc-N7X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m1X-oY-eLF"/>
+                    </view>
+                    <connections>
+                        <outlet property="tabBarContainer" destination="KuA-NS-a4h" id="zRN-dh-oAX"/>
+                        <outlet property="tabContentContainer" destination="OFM-mV-1AP" id="pD9-QE-Igl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNd-MT-XcH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="207" y="74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_plus" width="16" height="16"/>
+    </resources>
+</document>

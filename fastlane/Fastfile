@@ -1,0 +1,87 @@
+default_platform(:ios)
+
+# Schemes data
+# -----------------
+
+schemes = {
+  operario_development: {
+    scheme_name: "Operator (Development)",
+    build_configuration: "Release (Operario Development)",
+    bundle_identifier: "com.inmind.AECan.operario.dev",
+    firebase_app_id: "1:429490330211:ios:16ce66f4c7f3726d617656"
+  },
+  operario_staging: {
+    scheme_name: "Operator (Staging)",
+    build_configuration: "Release (Operario Staging)", 
+    bundle_identifier: "com.inmind.AECan.operario.staging",
+    firebase_app_id: "1:429490330211:ios:89f8e5e39f8144c1617656"
+  },
+  usuario_development: {
+    scheme_name: "User (Development)",
+    build_configuration: "Release (Usuario Development)",
+    bundle_identifier: "com.inmind.AECan.usuario.dev",
+    firebase_app_id: "1:429490330211:ios:00d0bf4212e31e65617656"
+  },
+  usuario_staging: {
+    scheme_name: "User (Staging)",
+    build_configuration: "Release (Usuario Staging)", 
+    bundle_identifier: "com.inmind.AECan.usuario.staging",
+    firebase_app_id: "1:429490330211:ios:68df4515c88966d6617656"
+  }
+}
+
+# Shared logic
+# -----------------
+
+def build_and_distribute_to_firebase(scheme_data)
+  get_certificates(
+    username: "info@vortexsoftware.com.ar", 
+    team_id: "Z3W9JWYRKY",
+    output_path: "./tmp"
+  )
+  
+  get_provisioning_profile(
+    username: "info@vortexsoftware.com.ar", 
+    team_id: "Z3W9JWYRKY", 
+    app_identifier: scheme_data[:bundle_identifier], 
+    force: true, 
+    adhoc: true,
+    output_path: "./tmp"
+  )
+  
+  build_ios_app(
+    scheme: scheme_data[:scheme_name],
+    configuration: scheme_data[:build_configuration],
+    output_directory: "./tmp",
+    clean: true,
+    export_options: { 
+      method: "ad-hoc",
+      provisioningProfiles: { 
+        scheme_data[:bundle_identifier] => "./tmp/AdHoc_#{scheme_data[:bundle_identifier]}.mobileprovision"
+      }
+    }
+  )
+
+  firebase_app_distribution(
+    app: scheme_data[:firebase_app_id]
+  )
+end
+
+# Lanes
+# -----------------
+
+lane :distribute_operario_development_to_firebase do
+  build_and_distribute_to_firebase(schemes[:operario_development])
+end
+
+lane :distribute_operario_staging_to_firebase do
+  build_and_distribute_to_firebase(schemes[:operario_staging])
+end
+
+lane :distribute_usuario_development_to_firebase do
+  build_and_distribute_to_firebase(schemes[:usuario_development])
+end
+
+lane :distribute_usuario_staging_to_firebase do
+  build_and_distribute_to_firebase(schemes[:usuario_staging])
+end

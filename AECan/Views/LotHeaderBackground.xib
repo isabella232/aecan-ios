@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LotHeaderBackground" customModule="AECan_DEV" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ucCellBg" translatesAutoresizingMaskIntoConstraints="NO" id="fHJ-Wk-Lst">
+                    <rect key="frame" x="298" y="44" width="116" height="818"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="116" id="Ece-8M-T1z"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" name="ucGrey200"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fHJ-Wk-Lst" secondAttribute="trailing" id="8EO-ka-wls"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fHJ-Wk-Lst" secondAttribute="bottom" id="8yt-BK-pOP"/>
+                <constraint firstItem="fHJ-Wk-Lst" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="AfM-Pd-RUk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="122"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ucCellBg" width="454" height="363"/>
+        <namedColor name="ucGrey200">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
